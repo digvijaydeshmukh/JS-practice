@@ -1,0 +1,16 @@
+
+let m1 =[1,2,3];
+let m2 =[3,2,5];
+
+let user=[{id:1},{id:2},{id:3}]
+let user1=[{id:3},{id:2},{id:5}]
+
+let temp=[...user,...user1]
+
+console.log(temp)
+let t=temp.filter((el,i,arr)=>arr.findIndex(e=>e.id===el.id)!=i)
+
+/* let temp=[...m1,...m2] */
+
+/* let t=temp.filter((el,i,arr)=>arr.findIndex(e=>e===el)===i) */
+console.log(t)
