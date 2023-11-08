@@ -1,0 +1,15 @@
+let arr=[20,-5,-1];
+
+temp=[];
+for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr.length - i; j++) {
+      const subArray = arr.slice(i, j + i + 1);
+      temp.push(subArray);
+    }
+  }
+console.log(temp)
+arr1=[]
+for(let i=0;i<temp.length;i++){
+arr1.push(temp[i].reduce((acc,c)=>acc+c))
+}
+console.log(arr1)
